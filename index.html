@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - 20501</title>
+  
+  
+  
+  
+<style>
+body{background-color: lightblue
+}
+
+.correct{background: green;
+}
+
+.incorrect{background: red;
+}
+body {
+ background-image: url(https://images-na.ssl-images-amazon.com/images/I/71J2%2BQiNWDL._AC_SL1500_.jpg);
+ background-color: #cccccc;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <h1><font color="green">Stuff I learned this summer quiz</h1>
+
+<ol>
+  <li><font color="green">What president started the Vietnam War? <input data-correct="Dwight D. Eisenhower" class="correct"/></li>
+  <li>Who pushed for the Great Society? <input data-correct="Lyndon B. Johnson" class="correct"/></li>
+   <li>Did Ronald Reagan commit war crimes? <input data-correct="yes" class="correct"/></li>
+  <li>How many movies was Ronald Reagan in? <input data-correct="70" class="correct"/></li>
+  <li>Has there been a president that has not committed war crimes in the past 50 years? <input data-correct="no" class="correct"/></li>
+  <li>Who said "Under no pretext should arms and ammunition be surrendered", Karl Marx or Ronald Reagan?<input data-correct="Karl Marx" class="correct"/></li>
+  <li>Who said ""There's no reason why on the street today a citizen should be carrying loaded weapons", Karl Marx or Ronald Reagan?<input data-correct="Karl Marx" class="correct"/></li>
+  <li>Did Milton Friedman say that colonialism was a net positive? <input data-correct="yes" class="correct"/></li>
+  <li>What thinker who dealt with the ideas of Christian Anarchism was read by Chris McCandless? <input data-correct="Tolstoy" class="correct"/></li>
+  <li>How many people died to AIDS under Reagan? <input data-correct="89,343" class="correct"/></li>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  
+      <script id="rendered-js" >
+console.clear();
+
+$("input").change(onChange);
+
+function onChange(evt) {
+  let correct = $(this).data("correct");
+  let response = $(this).val();
+  if (correct == response) {
+    $(this).removeClass("incorrect").addClass("correct");
+  } else {
+    $(this).removeClass("correct").addClass("incorrect");
+  }
+}
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
